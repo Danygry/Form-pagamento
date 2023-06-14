@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    
+    <link rel="stylesheet" href="styles.css"> <!--PERCORSO CSS-->
+</head>
+
+<body>
+    <div class="payment-title">      <!--TITOLO-->
+        <h1>Informazioni di Pagamento</h1>
+    </div>
+    <div class="container preload">
+        <div class="card"> <!--STRUTTURA CARTA-->
+            <div class="card__front card__part">
+              <img class="card__front-square card__square" src="https://i.ibb.co/G9pDnYJ/chip.png"> <!--CHIP-->
+              <img class="card__front-logo card__logo" src="https://i.ibb.co/WHZ3nRJ/visa.png"> <!--LOGO-->
+              <p class="card_numer">0123 4567 8910 2548</p>
+              <div class="card__space-75">
+                <span class="card__label">nome del titolare</span>
+                <p class="card__info">Mario Rossi</p>
+              </div>
+              <div class="card__space-25">
+                <span class="card__label">Scadenza</span>
+                      <p class="card__info">10/25</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-container"> <!--FORM-->
+        <div class="field-container">
+            <label for="name">Nome</label>
+            <input id="name" maxlength="20" type="text">
+        </div>
+        <div class="field-container">
+            <label for="cardnumber">Carta Numero</label>
+            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
+            <svg id="ccicon" class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            </svg>
+        </div>
+        <div class="field-container">
+            <label for="expirationdate">Scadenza (mm/yy)</label>
+            <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric">
+        </div>
+        <div class="field-container">
+            <label for="securitycode">Codice di Sicurezza</label>
+            <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric">
+        </div>
+        <button type="button"class="button">Invia</button> <!--PULSANTE-->
+    </div>
+</body>
+</html>
